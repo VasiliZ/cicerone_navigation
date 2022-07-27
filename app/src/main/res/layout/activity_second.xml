@@ -7,23 +7,23 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/firstActivityLabel"
+        android:id="@+id/secondActivityLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/first_activity"
-        app:layout_constraintBottom_toTopOf="@id/toSecondActivityButton"
+        android:text="@string/second_activity"
+        app:layout_constraintBottom_toTopOf="@id/toFirstActivityButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/toSecondActivityButton"
+        android:id="@+id/toFirstActivityButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/to_second_activity"
+        android:text="@string/to_first_activity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/firstActivityLabel" />
+        app:layout_constraintTop_toBottomOf="@id/secondActivityLabel" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

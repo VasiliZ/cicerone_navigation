@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">cicerone_navigation</string>
+    <string name="first_activity">First activity</string>
+    <string name="to_second_activity">To second activity</string>
+    <string name="second_activity">second activity</string>
+    <string name="to_first_activity">to first activity</string>
 </resources>

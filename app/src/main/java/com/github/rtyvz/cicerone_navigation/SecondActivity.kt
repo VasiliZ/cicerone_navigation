@@ -6,16 +6,16 @@ import androidx.appcompat.app.AppCompatActivity
 import com.github.terrakok.cicerone.Navigator
 import com.github.terrakok.cicerone.androidx.AppNavigator
 
-class MainActivity : AppCompatActivity() {
-
+class SecondActivity : AppCompatActivity() {
     private val navigator: Navigator = AppNavigator(this, -1)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
-        findViewById<Button?>(R.id.toSecondActivityButton).setOnClickListener {
-            CiceroneApp.getRouter()?.navigateTo(Screens.secondActivity())
+        setContentView(R.layout.activity_second)
+
+        findViewById<Button>(R.id.toFirstActivityButton).setOnClickListener {
+            CiceroneApp.getRouter()?.exit()
         }
     }
 
@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onPause() {
         CiceroneApp.geNavigatorHolder()?.removeNavigator()
+
         super.onPause()
     }
 }
