@@ -4,4 +4,6 @@
     <string name="to_second_activity">To second activity</string>
     <string name="second_activity">second activity</string>
     <string name="to_first_activity">to first activity</string>
+    <string name="open_few_fragments">Open few fragments</string>
+    <string name="finish_chain_fragment">Finish chain fragment</string>
 </resources>
